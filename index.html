@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComidasDeliciosas S.A.</title>
+    <link rel="stylesheet" href="prueba.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous"
+/>
+</head>
+<body style ="background-color: rgb(85, 1, 1);">
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"
+            ><img
+            src="assets/imagenes/hamburguesa.webp"
+            id="navlogo"
+            alt="logo-png"
+        /></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html" id="navtext"
+                >Inicio <span class="sr-only">(current)</span></a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sobreNosotros.html" id="navtext">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="servicios.html" id="navtext">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html" id="navtext">Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+        <img src="assets/imagenes/chef.png" alt="logo-png" id="chef" />
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/imagenes/635b20574d2f5c508f58567d.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+            <h2>Bienvenidos a Comidas Deliciosas S.A.</h2>
+            <hr>
+            <p>En ComidasDeliciosas S.A., nos apasiona la cocina y la gastronomía. Somos una empresa dedicada a ofrecer un amplio catálogo de recetas de cocina de diversas categorías, 
+                desde platillos tradicionales hasta las más innovadoras creaciones culinarias. Nuestra misión es proporcionar a nuestros usuarios una 
+                experiencia culinaria única y variada, con recetas detalladas y fáciles de seguir, que inspiran y deleitan.</p>
+            <p>
+                Explora nuestras diferentes categorías de comidas, descubre nuevas recetas y lleva tu amor por la cocina a otro nivel.
+                Ya sea que seas un chef experimentado o un entusiasta de la cocina casera, en ComidasDeliciosas S.A. encontrarás el platillo perfecto para cada ocasión.
+            </p>
+            <br>
+            </div>
+            <div class="carousel-button">
+            
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
+        <!-- mostrando tabla con datos de comida -->
+    <div class="container" id="fondo-tabla"> 
+        <div class="row my-4">
+        <div class="col-lg-12">
+            <table class="table table-striped" id = "tabla-principal">
+            <thead>
+                <button id="btn-cargar" class="btn btn-dark">
+                <i class="fas fa-list"></i> Ver Categorías
+                </button><br><br>
+                <tr >
+                <th scope="col">id</th>
+                <th scope="col">Tipo comida</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">imagen</th>
+                <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla" style="display:none;"></tbody>
+            </table>
+        </div>
+        </div>
+        <div class="row-my-4">
+        <div class="col-lg-12" id="spinner">
+        </div>
+        </div>  
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+        <p class="mb-0">
+            &copy; 2024 ComidasDeliciosas S.A. Todos los derechos reservados.
+        </p>
+        <p>
+            <a href="#" class="text-white">Términos y condiciones</a> | 
+            <a href="#" class="text-white">Política de privacidad</a>
+        </p>
+        </div>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://kit.fontawesome.com/cc0673289f.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="prueba.js"></script>
+</body>
+</html>
